@@ -8,7 +8,6 @@ import ToDo from "../components/ToDo.js";
 
 export default function Main(){
     const toDoList = useRecoilValue(filteredToDoListState);
-    console.log(toDoList)
     return(
         <>
             <ToDoFilter />

@@ -16,7 +16,6 @@ export default function ToDoEditor(todo){
     const dateRef = useRef(null);
     const [toDoList, setToDoList] = useRecoilState(toDoListState);
     const idx = toDoList.findIndex((item) => item === todo.todo);
-    console.log(idx)
 
     let newId = todo.todo.id;
     let newTodo = todo.todo.text;
@@ -46,7 +45,6 @@ export default function ToDoEditor(todo){
                 text: newTodo,
                 date: newDate,
             });
-            console.log(newToDoList)
             setToDoList(newToDoList);
         }
     }
